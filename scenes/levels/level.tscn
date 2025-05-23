@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d08egxg5yi0mt"]
+
+[ext_resource type="Texture2D" uid="uid://b0xrd58dolfp8" path="res://icon.svg" id="1_bovvr"]
+[ext_resource type="Script" uid="uid://c31y3qqjh8a66" path="res://scenes/logo.gd" id="2_bovvr"]
+
+[node name="Level" type="Node2D"]
+
+[node name="logo" type="Sprite2D" parent="."]
+texture = ExtResource("1_bovvr")
+region_rect = Rect2(-4, -0.5, 70, 104)
+script = ExtResource("2_bovvr")
