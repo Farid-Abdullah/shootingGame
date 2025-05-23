@@ -10,14 +10,15 @@ var test_scale: float = 1
 func _ready():
 	pos = Vector2(300,200) # gives a starting position to the sprite
 	test_scale = 2
+	position = Vector2(0,100)
 
 func _process(delta):
-	pos.x+= 0.5 # moves the sprite to the right
-	pos.y += 0.5 # moves the sprite down every frame
-	position = pos
-	#rotation_degrees += 5 # equavalent to "rotation +=0.0873" in radians
-	test_scale+=0.01
-	scale = Vector2(test_scale,test_scale)
-	
+	position.x += 1200*delta
+	if position.x > 1000:
+		position = Vector2(0,100)
+		
+
+		
+
 	
 	
