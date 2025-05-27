@@ -1,13 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7w43agf1hfm"]
+[gd_scene load_steps=4 format=3 uid="uid://c7w43agf1hfm"]
 
 [ext_resource type="Texture2D" uid="uid://buvbel4ef4jcv" path="res://graphics/player/player.png" id="1_dovo2"]
 [ext_resource type="Script" uid="uid://cq1q0y54qootn" path="res://scenes/player/player.gd" id="1_gmlin"]
 
-[node name="player" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
+size = Vector2(163.416, 78)
+
+[node name="player" type="CharacterBody2D"]
 script = ExtResource("1_gmlin")
 
 [node name="playerImage" type="Sprite2D" parent="."]
-position = Vector2(596.487, 136.282)
-rotation = -0.47822
-scale = Vector2(-0.934008, -0.923924)
+position = Vector2(591.469, 138.883)
+rotation = 3.14159
+scale = Vector2(0.884647, 0.923924)
 texture = ExtResource("1_dovo2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(589.786, 143.625)
+rotation = 0.174533
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_dovo2")
+
+[node name="gun" type="Node2D" parent="."]
+position = Vector2(680, 158)
