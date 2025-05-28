@@ -10,16 +10,12 @@ size = Vector2(163.416, 78)
 script = ExtResource("1_gmlin")
 
 [node name="playerImage" type="Sprite2D" parent="."]
-position = Vector2(591.469, 138.883)
-rotation = 3.14159
-scale = Vector2(0.884647, 0.923924)
 texture = ExtResource("1_dovo2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(589.786, 143.625)
-rotation = 0.174533
-scale = Vector2(1, 1)
+position = Vector2(16.0001, -0.999985)
+rotation = 3.31613
 shape = SubResource("RectangleShape2D_dovo2")
 
 [node name="gun" type="Node2D" parent="."]
-position = Vector2(680, 158)
+position = Vector2(-82, -23)

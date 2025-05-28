@@ -1,4 +1,4 @@
-extends Sprite2D
+extends CharacterBody2D
 
 var pos: Vector2 = Vector2.ZERO
 
