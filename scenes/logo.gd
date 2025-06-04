@@ -14,13 +14,14 @@ func _ready():
 
 
 func _process(delta):
+	move_and_slide()
 	#position.x += 1200*delta
 	if position.x > 1000:
 		position = pos
 	if position.y>1000 or position.y<0:
 		position = pos
 	
-	move_and_slide()
+	
 	
 	
 
